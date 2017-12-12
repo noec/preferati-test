@@ -11,8 +11,8 @@ class WebService
   end
 
   def authenticate_on_sugarcrm
-    username = 'aspirant'
-    password = Digest::MD5.hexdigest 'Check@t11#'
+    username = 'test'
+    password = Digest::MD5.hexdigest 'changeme'
 
     begin
       @client = Savon.client(wsdl: 'http://datatest.preferati.net/service/v4_1/soap.php?wsdl')
